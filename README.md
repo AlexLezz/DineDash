@@ -1,1 +1,1 @@
-# DineDash Денчик смог
+# DineDash
