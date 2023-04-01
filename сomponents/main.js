@@ -11,6 +11,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { StatusBar } from "expo-status-bar";
 import { Feather } from "@expo/vector-icons";
 import { gStyle } from "../styles/gStyle";
+import MyStack from "./stackNav";
 
 export default function Main({ navigation }) {
   const [info, setInfo] = useState([
@@ -51,7 +52,7 @@ export default function Main({ navigation }) {
         data={info}
         renderItem={({ item }) => (
           <TouchableOpacity style={gStyle.mainRest}
-            onPress={() => navigation.navigate("fullInfo", item)}
+            onPress={() => navigation.navigate('FullInfo')}
           >
             <View>
               <Image style={gStyle.mainRestImg} source={{ uri: item.img }} />

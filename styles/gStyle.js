@@ -100,5 +100,7 @@ export const gStyle = StyleSheet.create({
     paddingBottom: "5%",
     backgroundColor: "#FFF",
   },
-  profileSettingNameText: {},
+  slider: {
+    backgroundColor: "green",
+  },
 });

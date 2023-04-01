@@ -10,6 +10,7 @@ import Profile from './profile';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 import { Ionicons } from '@expo/vector-icons';
+import StackNav from './stackNav';
 // Screen name
 const mainName = "Главная";
 const bookingName = "Бронирования";
@@ -23,7 +24,7 @@ export default function mainContainer() {
   return (
     <NavigationContainer>
         <Tab.Navigator initialRouteName={mainName} 
-        screenOptions={({route}) => ({
+        screenOptions={({route}) => ({ headerShown:false,
             tabBarIcon: ({focused, color, size}) => {
                 let iconName;
                 let rn = route.name;
@@ -50,7 +51,7 @@ export default function mainContainer() {
         }}
         >
 
-        <Tab.Screen name={mainName} component={Main}/>
+        <Tab.Screen name={mainName} component={StackNav}/>
         <Tab.Screen name={bookingName} component={Booking}/>
         <Tab.Screen name={favoritesName} component={Favorites}/>
         <Tab.Screen name={chatName} component={Chat}/>
