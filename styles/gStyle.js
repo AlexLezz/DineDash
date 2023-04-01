@@ -73,20 +73,21 @@ export const gStyle = StyleSheet.create({
   },
   profileImg: {
     borderRadius: 250,
-    width: 100,
-    height: 100,
+    width: 120,
+    height: 120,
   },
   profileContainer: {
     flexDirection: "row",
-    paddingHorizontal: "10%",
+    paddingHorizontal: "5%",
     paddingVertical: "8%",
-    borderBottomWidth: 0.5,
-    paddingBottom: "20%",
+    borderBottomWidth: 1,
+    borderBottomColor: "rgba(0, 0, 0, 0.1)",
+    paddingBottom: "10%",
     backgroundColor: "#FFF",
   },
   profileNameAndNumberView: {
-    paddingHorizontal: "12%",
-    paddingVertical: "6%",
+    paddingHorizontal: "10%",
+    paddingVertical: "10%",
   },
   profileTextNameAndNumber: {
     fontSize: 20,
@@ -95,10 +96,77 @@ export const gStyle = StyleSheet.create({
   },
   profileSettings: {
     flexDirection: "row",
-    paddingHorizontal: "10%",
+    paddingHorizontal: "5%",
     paddingVertical: "5%",
-    paddingBottom: "5%",
+    paddingBottom: "10%",
+    backgroundColor: "#FFF",
+    
+  },
+  profileSettingNameText: {
+    fontSize: 15,
+    fontFamily: "roboto-500",
+    color: "#8F9090",
+  },
+  profilePersonalInfo: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    borderBottomWidth: 1,
+    borderBottomColor: "rgba(0, 0, 0, 0.1)",
+    paddingVertical: 15
+  },
+  profilePersonalIconsText: {
+    fontSize: 20
+  },
+  profileSecurity: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    borderBottomWidth: 1,
+    borderBottomColor: "rgba(0, 0, 0, 0.1)",
+    paddingVertical: 15
+  },
+  profileSecurityText: {
+    fontSize: 20,
+  },
+  AboutUsBlock: {
+    flexDirection: "row",
+    paddingHorizontal: "5%",
+    paddingVertical: "5%",
+    paddingBottom: "10%",
     backgroundColor: "#FFF",
   },
-  profileSettingNameText: {},
+  AboutUsText: {
+    fontSize: 15,
+    fontFamily: "roboto-500",
+    color: "#8F9090",
+  },
+  AboutApp: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    borderBottomWidth: 1,
+    borderBottomColor: "rgba(0, 0, 0, 0.1)",
+    paddingVertical: 15
+  },
+  AboutAppText: {
+    fontSize: 20,
+  },
+  Support: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    borderBottomWidth: 1,
+    borderBottomColor: "rgba(0, 0, 0, 0.1)",
+    paddingVertical: 15
+  },
+  SupportText: {
+    fontSize: 20,
+  },
+  Exit: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    borderBottomWidth: 1,
+    borderBottomColor: "rgba(0, 0, 0, 0.1)",
+    paddingVertical: 15
+  },
+  ExitText: {
+    fontSize: 20,
+  },
 });
