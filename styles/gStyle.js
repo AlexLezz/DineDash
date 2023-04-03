@@ -112,7 +112,7 @@ export const gStyle = StyleSheet.create({
     justifyContent: "space-between",
     borderBottomWidth: 1,
     borderBottomColor: "rgba(0, 0, 0, 0.1)",
-    paddingVertical: 15
+    paddingVertical: 15,
   },
   profilePersonalIconsText: {
     fontSize: 20
