@@ -134,6 +134,9 @@ export const gStyle = StyleSheet.create({
     paddingBottom: "10%",
     backgroundColor: "#FFF",
   },
+  slider: {
+    backgroundColor: "green",
+  },
   AboutUsText: {
     fontSize: 15,
     fontFamily: "roboto-500",
