@@ -18,6 +18,9 @@ export default function Main({ navigation }) {
     {
       img: "https://klike.net/uploads/posts/2022-09/1662641376_a.jpg",
       title: "Madagascar",
+      slots: 20,
+      freeSlots: 7,
+      reviewCol: 78,
       descr:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       nav: "ул. Пушкина, дом 2",
@@ -26,16 +29,22 @@ export default function Main({ navigation }) {
     {
       img: "https://tataevfamily.ru/wp-content/uploads/2022/06/12-2880x1920.jpg",
       title: "Racsagadam",
+      slots: 34,
+      freeSlots: 10,
+      reviewCol: 23,
       descr:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       nav: "ул. Калатушкина, дом 3",
-      stars: "9.4",
+      stars: "4.4",
     },
     {
       img: "https://static.tildacdn.com/tild6639-6536-4962-a131-373562346337/RUSKI_interior_5.JPG",
       title: "MamaRoma",
+      slots: 29,
+      freeSlots: 19,
+      reviewCol: 135,
       descr: "Ну давай, залезай сюда",
-      nav: "ул. Пушкина, дом 2",
+      nav: "ул. Лермонтова, дом 7",
       stars: "3.4",
     },
   ]);
@@ -52,7 +61,7 @@ export default function Main({ navigation }) {
         data={info}
         renderItem={({ item }) => (
           <TouchableOpacity style={gStyle.mainRest}
-            onPress={() => navigation.navigate('FullInfo')}
+            onPress={() => navigation.navigate('FullInfo', item)}
           >
             <View>
               <Image style={gStyle.mainRestImg} source={{ uri: item.img }} />

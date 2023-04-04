@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Text, View, Image, ScrollView, TouchableOpacity, Button } from 'react-native';
 import { gStyle } from '../styles/gStyle';
 import { Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
-import  { launchImageLibrary, ImagePicker }  from 'react-native-image-picker';
 /*const AvatarPicker = ({ imageUri, setImageUri }) => {
   const selectImage = async () => {
     try {
@@ -33,11 +32,15 @@ import  { launchImageLibrary, ImagePicker }  from 'react-native-image-picker';
 export default function Profile({ navigation }) {
   //const [imageUri, setImageUri] = useState(null);
   const AddPhoto = async() =>{
-    const result = ImagePicker.launchImageLibraryAsync() ({mediaType: "photo"});
+    const result = ImagePicker.launchImageLibraryAsync({
+      mediaTypes: ImagePicker.MediaTypeOptions.All,
+      allowsEditing: true,
+      aspect: [4, 3],
+      quality: 1,
+    });
     if (result.assets) {
       console.log(result.assets);
     }
-
   }
   return (
     <ScrollView>
