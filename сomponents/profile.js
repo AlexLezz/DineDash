@@ -32,7 +32,7 @@ import Modal from "react-native-modal";
 */
 
 export default function Profile({ navigation }) {
-
+  const [newPhoto, setNewPhoto] = useState(require('../img/profile2.png'));
   const pickPhoto = async () => {
     // No permissions request is necessary for launching the image library
     let resultPhoto = await ImagePicker.launchCameraAsync({
@@ -66,7 +66,6 @@ export default function Profile({ navigation }) {
   };
   const [modalPersonalInfo, setModalPersonalInfo] = useState(false);
   const [modalAddPhoto, setmodalAddPhoto] = useState(false);
-  const [newPhoto, setNewPhoto] = useState(require('../img/profile2.png'))
   //const [imageUri, setImageUri] = useState(null);
   return (
     
@@ -83,6 +82,12 @@ export default function Profile({ navigation }) {
           <View style={{flexDirection: "row", paddingHorizontal: "10%", paddingVertical: "5%",borderBottomWidth: 1,}}>
           <Ionicons name="image-outline" size={40} color="black" />
           <Text style={{fontSize:30, marginLeft: "30%"}}>Галерея</Text>
+          </View>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => setNewPhoto()}>
+          <View style={{flexDirection: "row", paddingHorizontal: "10%", paddingVertical: "5%", borderBottomWidth: 1,}}>
+          <Ionicons name="close-circle-outline" size={40} color="black" />
+          <Text style={{fontSize:30, marginLeft: "30%"}}>Удалить</Text>
           </View>
           </TouchableOpacity>
           <TouchableOpacity onPress={() => setmodalAddPhoto(false)}>
