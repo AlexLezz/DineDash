@@ -56,14 +56,14 @@ export const gStyle = StyleSheet.create({
     paddingVertical: 5,
     paddingHorizontal: 10,
     borderRadius: 10,
-    backgroundColor: "#F8F9FB",
+    backgroundColor: "#D7DCE4",
   },
   mainRestStar: {
     flexDirection: "row",
     paddingVertical: 5,
     paddingHorizontal: 10,
     borderRadius: 10,
-    backgroundColor: "#F8F9FB",
+    backgroundColor: "#D7DCE4",
   },
   mainRestStarText: {
     marginRight: 8,
@@ -135,7 +135,9 @@ export const gStyle = StyleSheet.create({
     backgroundColor: "#FFF",
   },
   slider: {
+    width: "100%",
     backgroundColor: "green",
+    marginBottom: 10,
   },
   AboutUsText: {
     fontSize: 15,
@@ -172,4 +174,102 @@ export const gStyle = StyleSheet.create({
   ExitText: {
     fontSize: 20,
   },
+  restInfoDescr: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginBottom: 20,
+    marginTop: 7
+
+  },
+  FullInfoOptions: {
+    paddingHorizontal: 15,
+  },
+  restInfoNav: {
+    fontFamily: "roboto-400",
+    fontSize: 14,
+    color: "#333138",
+  },
+  restInfoReviews: {
+    justifyContent: "flex-end",
+  },
+  restInfoStarContainer: {
+    flexDirection: 'row',
+    backgroundColor: '#D7DCE4',
+    borderRadius: 10, 
+    justifyContent: "space-between",
+    padding: 7,
+  },
+  reviewCol: {
+    fontFamily: "roboto-400",
+    fontSize: 16,
+    color: "#FE6223",
+    marginTop: 7
+  },
+  fullInfoSlotsTitle: {
+    fontFamily: "roboto-500",
+    fontSize: 20,
+    color: "#333138",
+    marginBottom: 10
+  },
+  fullInfoSlotsTitleNum: {
+    color: "#FE6223",
+    fontSize: 25
+  },
+  mainRestNavSlots: {
+    fontFamily: "roboto-400",
+    fontSize: 16,
+    color: "#FE6223",
+    marginTop: 7
+  },
+  fullInfoForm: {
+    padding: 5,
+    backgroundColor: "#D7DCE4",
+    borderRadius: 10, 
+  },
+  fullInfoFormTitle: {
+    fontFamily: "roboto-400",
+    fontSize: 16,
+    color: "#FE6223",
+    marginTop: 5
+  },
+  fullInfoFormMore: {
+    width: "100%",
+    height: 50,
+    backgroundColor: "#FFFFFF",
+    borderRadius: 10,
+    padding: 5,
+    marginBottom: 10,
+  },
+  fullInfoBtn: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingVertical: 12,
+    paddingHorizontal: 32,
+    borderRadius: 10,
+    elevation: 3,
+    backgroundColor: "#FE6223",
+  },
+  fullInfoBtnText: {
+    fontFamily: "roboto-700",
+    fontSize: 16,
+    color: "#FFF",
+  },
+  bookingTitle: {
+    padding: 15,
+  },
+  bookingTitleText: {
+    fontFamily: "roboto-500",
+    fontSize: 20,
+  },
+  bookingEmpty: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  bookingEmptyText: {
+    fontFamily: "roboto-500",
+    fontSize: 22,
+    marginTop: 40,
+  }
+
 });

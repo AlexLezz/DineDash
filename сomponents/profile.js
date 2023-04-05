@@ -15,7 +15,6 @@ import Modal from "react-native-modal";
       console.log('Error selecting image:', error);
     }
   };
-
   return (
     <TouchableOpacity onPress={selectImage}>
       {imageUri ? (

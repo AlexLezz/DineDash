@@ -19,7 +19,7 @@ export default function stackNav() {
         <Stack.Screen 
           name='FullInfo'
           component={FullInfo}
-          options={{title: 'Хз'}}
+          options={{title: 'Подробнее'}}
         />
       </Stack.Navigator>
   );
